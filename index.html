@@ -5,11 +5,13 @@
 </head>
   
 <style>
-body  {
+body {
   background-image: url("https://github.com/webProgramYzu/HW01/blob/main/background.jpg?raw=true");
   background-color: #ffffff;
   text-align:center;
   background-attachment: no-repeat;
+  width: 100vw;
+  height: 100vw;
   object-fit:cover;
 }
 div.box {
@@ -26,8 +28,9 @@ p.a {
   text-align: center; 
 }
 </style>
- 
-<body>
+
+<body style="background-repeat:no-repeat; background-attachment: fixed; object-fit:cover;">
+	
   <div class="box">
       <form action="action_page.php">
           <p class="a">
@@ -45,7 +48,7 @@ p.a {
             <label for="gender"> Female</label> &nbsp;
             <br>
             <input type="submit" value="Submit">
-          </p>
+          <p>
       </form>
   </div>
 </body>
