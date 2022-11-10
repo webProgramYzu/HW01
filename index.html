@@ -5,25 +5,34 @@
 </head>
   
 <style>
+label{
+  style:display:inline;
+}
+select{
+  width:100px;
+  height:30px;
+}
 body {
   background-image: url("https://github.com/webProgramYzu/HW01/blob/main/background.jpg?raw=true");
   text-align:center;
   background-attachment: no-repeat;
-  background-size: 100% 100%;
-  background-size: contain;
+  background-size:100vw 100vh;
 }
 div.box {
-  align:center;
-  margin:50px;
-  width:300px;
-  height:300px;
+  width:500px;
+  height:600px;
   background-color:#ffffff;
   border:1px solid black;
+  margin:50px;
+  margin-left: auto;
+  margin-right: auto;	
   opacity:0.85;
 }
-p.a {
-  font: 20px Arial, sans-serif;
+div.a {
+  font:30px Arial, sans-serif;
   text-align: center; 
+  line-height:40px;
+  margin:50px;
 }
 </style>
 
@@ -31,22 +40,27 @@ p.a {
 	
   <div class="box">
       <form action="action_page.php">
-          <p class="a">
-            <h1 style="font-size:30px;">Regstor</h1>
+          <div class="a">
+	    <p><p>
+            <h1 style="font-size:60px;">Registor</h1>
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" placeholder="Enter Your First Name" required><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter Your First Name" style="width:200px;
+  		height:30px;" required><br>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name" required><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name" style="width:200px;
+  		height:30px;" required><br>
             <label for="email">Email Address:</label><br>
-            <input type="text" id="email" name="email" placeholder="xxx@gmail.com" required><br>
-            
-            <input type="checkbox" id="gender" name="gender" placeholder="male">
-            <label for="gender"> Male</label> &nbsp;
-            <input type="checkbox" id="gender" name="gender" placeholder="female">
-            <label for="gender"> Female</label> &nbsp;
-            <br>
-            <input type="submit" value="Submit">
-          <p>
+            <input type="email" id="email" name="email" placeholder="xxx@gmail.com" style="width:200px;
+  		height:30px;" required><br>
+
+	    <label for="gender">Gender:</label><br>
+  		<select id="gender" name="gender">
+		  <option value="male">  Male  </option>
+    		  <option value="female">Female</option>
+		</select>
+            <br><br>
+            <input type="submit" value="Submit" style="width:200px; height:30px;">
+          </div>
       </form>
   </div>
 </body>
