@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>1103513</title>
 </head>
   
 <style>
 label{
-  style:display:inline;
+  display:inline;
 }
 select{
   width:100px;
@@ -14,11 +14,11 @@ select{
 }
 body {
   background-image: url("https://github.com/webProgramYzu/HW01/blob/main/background.jpg?raw=true");
-  text-align:center;
   background-attachment: no-repeat;
   background-size:100vw 100vh;
 }
 div.box {
+  text-align:center;
   width:500px;
   height:600px;
   background-color:#ffffff;
@@ -33,6 +33,9 @@ div.a {
   text-align: center; 
   line-height:40px;
   margin:50px;
+}
+p.a{
+  margin-left: 30px;
 }
 </style>
 
@@ -63,5 +66,16 @@ div.a {
           </div>
       </form>
   </div>
-</body>
+  </body>
+  <p class="a">
+	Most of part was defined in &lt;style&gt; including the opacity block, background and the size of label.<br><br>
+	The outlay of opacity block is using div.box{} to define the property of it. default color is #fffff black with 0.85 opacity.<br><br>
+	The background is setting in the &lt;body&gt;, which is linking to picture url, with size cotrol by browser using 100 vw and vh. <br>
+	it also control the outer characters in the center.<br><br>
+	Because the page is too clear, so I decide to make the label and font size to be bigger, <br><br>
+	mentioning the label size is control by label{} in &lt;style&gt; and chaging the style of display to inline. <br>
+	It make the operation in input to modify the size of label possible.<br><br>
+	The last is the way to enter the form, usning input type &quot;text&quot;, &quot;email&quot;, and selection part with option value to decide the gender.<br><br><br>
+  <p>
+
 </html>
